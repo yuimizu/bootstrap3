@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ｜ガーデニングショップ GREEN FOREST GARDENING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="py-4">
+    <div class="container text-center">
+      <h1><a href="index.html"><img class="mw-100" src="./img/logo.png"></a></h1>
+    </div>
+  </header>
+  
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark  sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">GREEN FOREST GARDENING</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">お店について</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#items">商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#coupon">クーポン</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              インフォメーション
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html#shop">お店</a></li>
+              <li><a class="dropdown-item" href="index.html#access">アクセス</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-info text-dark" href="contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+         <ul class="navbar-nav me-auto"></ul>
+      </div>
+    </div>
+ </nav>
+
+  <!-- パンくずリスト -->
+  <nav aria-label="breadcrumb" class="bg-light p-3 rounded-2 container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">ホーム</a></li>
+      <li class="breadcrumb-item active" aria-current="page">お問い合わせ</li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="container">
+        <h2>お問い合わせ</h2>
+        <p>ガーデニングショップGREEN FOREST GARDENING(グリーンフォレストガーデニング)へのお問い合わせは、こちらのフォームをご利用ください。</p>
+    </div>
+
+    <!-- お問い合わせフォーム -->
+    <div class="container py-3">
+      <h3 class="mb-3">お問い合わせフォーム</h3>
+
+      <form>
+        <div class="row py-3">
+          <label for="name" class="col-md-3 col-form-label">お名前<span class="badge bg-warning text-dark ms-1">必須</span></label>
+          <div class="col-md-9">
+            <div class="form-floating">
+              <input type="text" id="name" class="form-control" placeholder="みどり　はなこ" required>
+              <label for="name">お名前を入力してください。</label>
+            </div>
+          </div>  
+        </div>
+
+        <div class="row py-3">
+          <label for="name" class="col-md-3 col-form-label">メールアドレス<span class="badge bg-warning text-dark ms-1">必須</span></label>
+          <div class="col-md-9">
+            <div class="form-floating">
+              <input type="text" id="name" class="form-control" placeholder="mail@example.com" required>
+              <label for="name">有効な電子メールアドレスを入力してください。</label>
+            </div>
+          </div>  
+        </div>
+
+        <fieldset class="py-3">
+          <div class="row">
+            <label class="col-md-3 col-form-label">当店を知ったきっかけ</label>
+            <div class="col-md-9">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  口コミ
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  検索エンジン
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                <label class="form-check-label" for="flexRadioDefault3">
+                  広告
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="row py-3">
+          <label for="name" class="col-md-3 col-form-label">お問い合わせ種類<span class="badge bg-warning text-dark ms-1">必須</span></label>
+          <div class="col-md-9">
+            <div class="form-floating">
+              <select name="category" id="category" class="form-select">
+                <option value="category1">ご予約について</option>
+                <option value="category2">委託販売について</option>
+                <option value="category3">その他のお問い合わせ</option>
+              </select>
+              <label for="category">お選びください。</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row py-3">
+          <label for="message" class="col-md-3 col-form-label">
+              お問い合わせ内容<span class="badge bg-warning text-dark">必須</span>
+          </label>
+          <div class="col-md-9">
+              <div class="form-floating">
+                  <textarea name="message" id="message" rows="8" class="form-control" placeholder="お問い合わせ内容"></textarea>
+                  <label for="message">ご自由にお書きください。</label>
+              </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-end py-3">
+          <div class="col-md-9">
+              <button class="btn btn-primary" type="submit">確認する</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main> 
+
+  <!-- footer -->
+  <footer class="bg-dark text-light">
+    <div class="container text-center py-4">
+      <ul class="nav justify-content-center mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link">ホーム</a></li>
+        <li class="nav-item"><a href="index.html#news" class="nav-link">新着</a></li>
+        <li class="nav-item"><a href="index.html#about" class="nav-link">お店について</a></li>
+        <li class="nav-item"><a href="index.html#items" class="nav-link">商品</a></li>
+        <li class="nav-item"><a href="index.html#coupon" class="nav-link">クーポン</a></li>
+        <li class="nav-item"><a href="index.html#shop" class="nav-link">インフォメーション</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">お問い合わせ</a></li>
+    </ul>
+    <p><small>Copyright © 2021 GREEN FOREST GARDENING, All Reserved.</small></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
